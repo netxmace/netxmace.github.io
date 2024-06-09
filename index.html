@@ -6,54 +6,100 @@
     <title>Newsletter June</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="Impact-Font/impact.ttf" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
     <style>
         
-        @font-face {
-            font-family: Impact, sans-serif;
-            src: url("Impact-Font/impact.ttf");
-        }
+        
         h1{
-            font-family: Impact, sans-serif;
-            color: #1a3d5d;
+            font-family: "Ubuntu", sans-serif;
+            font-weight: bold;
+            color: #00b406;
+            text-shadow: 1px 1px 1px #02b35a;
             text-align: center;
+            transition: 1s ease-in-out;
+        }
+        
+        h1:hover{
+            animation: cursorAnimation 3s infinite alternate;
+        }
+        @keyframes cursorAnimation {
+            0% {
+                transform: color;
+            }
+            50% {
+                transform: translateX(5px) translateY(0px);
+            }
+            100% {
+                transform: color;
+            }
+        }
+        
+        img{
+            border-radius: 10px;
         }
         h2{
             text-align: center;
-            font-family: Impact, sans-serif;
+            font-family: "Ubuntu", sans-serif;
             color: #fff5f3;
         }
         h3{
-            font-family: Impact, sans-serif;
-            color: #0e6a7f;
+            font-family: "Ubuntu", sans-serif;
+            color: #02b35a;
             text-decoration: solid underline;
         }
         p{
-            font-family: Impact, sans-serif;
-            color: #0e6a7f;
+            font-family: "Ubuntu", sans-serif;
+            color: #008744;
             text-align:left;
+            font-weight: bold;
         }
         p2{
-            font-family: Impact, sans-serif;
+            font-family: "Ubuntu", sans-serif;
             color: #fff5f3;
             text-align:justify;
         }
 
         body{
-            background: url("assets/3.jpg") no-repeat;
+            background: url("assets\\images.jpg") ;
+            background-repeat: repeat;
         }
         .sidebox{
-            background-color: #0e6a7f;
+            background-color: #02b35a;
+            border-radius: 7px;
         }
         a{
             color: #1a3d5d;
+        }
+        .click{
+            border-color: aqua;
+            border-radius: 3px;
+            background-color: #006935;
+            color: azure;
+            transition: 0.3s ease;
+            width: 200px; 
+        }
+        .click:hover{
+            border-color: aqua;
+            border-radius: 1px;
+            background-color: azure;
+            color: #02b35a;
+            cursor: pointer; 
+        }
+        .click:active{
+            border-color: rgb(255, 255, 255);
+            border-radius: 1px;
+            background-color: darkblue;
+            color: #ffffff;
+            cursor: pointer; 
         }
     </style>
 </head>
 <body>
     <br><br>
     <div class="container-fluid">
-        <h1 class="display-3 xs-m-0 xl-m-5 lg-m-4 md-m-3 sm-m-2 m-2">The NetX Newsletter</h1>
+        <h1 class="display-3 xs-m-0 xl-m-5 lg-m-4 md-m-3 sm-m-2 m-2">THE NETX NEWSLETTER    </h1>
     </div><br><br>
     <div class="container-fluid">
         <div class="row">
@@ -62,7 +108,7 @@
                 <h3>Volume 4</h3>
             </div>
             <div class="row xs-m-0 xl-m-5 lg-m-4 md-m-3 sm-m-2 m-2">
-            <img class="class=img-fluid col-12" src="assets/31 Hygge Quotes to Change Your Life _ Montana Happy.jfif">    
+            <img class="class=img-fluid col-12" src="assets/rainy.jpeg">    
             </div>
             <div class="row xs-m-0 xl-m-5 lg-m-4 md-m-3 sm-m-2 m-2">
                 <p>
@@ -74,7 +120,12 @@
                     <br><br>We encourage you to explore these opportunities and take full advantage of what they have to offer. Best of luck with your exams, and may the rainy season bring you calm and focus as you prepare for a successful conclusion to the semester.
                     
                     <br><br><br>
-                    <i>"The best way to predict the future is to invent it" - Alan Kay</i>
+                    <i>"Life's not about
+                        waiting for the
+                        storm to pass...
+                        It's about learning
+                        to dance in the rain.
+                        ~Vivian Greene"</i>
                 </p>
             </div>
             </div>
@@ -102,9 +153,10 @@
                         <div class="row xs-p-1 xl-p-4 lg-p-3 md-p-3 sm-p-2 p-4">
                             <p2>
                     - IEEE SPS Scholarship: <br>
-                    <a href="https://scholarships.theietevents.com/?gad_source=1&gclid=CjwKCAjw34qzBhBmEiwAOUQcF2AAWNCd4mSZVaHF82J99W3iN1VEdYFyfhdra4_y9YfeRgr4FPcvrhoCjiIQAvD_BwE#!">Click here</a>
+                    <a target="_blank" href="https://scholarships.theietevents.com/?gad_source=1&gclid=CjwKCAjw34qzBhBmEiwAOUQcF2AAWNCd4mSZVaHF82J99W3iN1VEdYFyfhdra4_y9YfeRgr4FPcvrhoCjiIQAvD_BwE" class="click">Click here</a>
+
                     <br><br>- IBM AI Engineer Internship: <br>
-                    <a href="https://signalprocessingsociety.org/community-involvement/sps-scholarship-program#:~:text=The%20IEEE%20Signal%20Processing%20Society,and%20real%2Dworld%20career%20experiences">Click here</a>
+                    <a target="_blank" class="click" href="https://signalprocessingsociety.org/community-involvement/sps-scholarship-program#:~:text=The%20IEEE%20Signal%20Processing%20Society,and%20real%2Dworld%20career%20experiences">Click here</a>
                 <br><br></p2></div>
                 </div>
                 <div class="row xs-m-0 xl-m-5 lg-m-4 md-m-3 sm-m-2 m-2 sidebox">
